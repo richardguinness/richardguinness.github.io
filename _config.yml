@@ -4,12 +4,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Observations of a fledgling Data Science"
+title: "Observations by a fledgling Data Scientist"
 #subtitle: "Subtitle to my awesome site"
 name: "Richard Guinness"
 email: richard@aftertouch.com 
 description: >- # this means to ignore newlines until "baseurl:"
-  Some of my observations while learning Data Science, whatever that is.
+  Some of my observations while learning Data Science.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://richardguinness.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
@@ -21,12 +21,17 @@ locale: "en-GB"
 author:
   name: "Richard Guinness"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Nugget shaped human popsicle"
+  bio: >-
+    I am studying data science, and have been for about 2 years.
+    I'm interested in how society can benefit by better understanding & using the superpowers that statistical methods can deliver.  
   location: "London, England"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/richardguinness" 
+      url: "https://github.com/richardguinness"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/richard-guinness/" 
 
 footer:
   links:
