@@ -31,6 +31,7 @@ def find_better_split(self, var_idx):
                 if curr_score<self.score: 
                     self.var_idx,self.score,self.split = var_idx,curr_score,xi
 ```
+Credit: [fast.ai course: Intro to Machine Learning for Coders 2018](https://github.com/fastai/fastai1/blob/master/courses/ml1/lesson3-rf_foundations.ipynb)
 
 The problem for me was the way that the `min_leaf` value was influencing the range iterator / loop counter. I couldn't understand the logic where a part of the loop is progressed before the `if i<self.min_leaf-1` statement potentially interupts it. And I found it unintuitive that the loop was started from value 0.
 
@@ -79,20 +80,4 @@ In order to try to demonstrate this more intuitively, I rearrange the function a
                 self.var_idx,self.score,self.split = var_idx,curr_score,xi
 ```
 
-
-<!-- 1. TOC
-{:toc} -->
-
-**Notice:** This is an important info notice.
-{: .notice}
-
-## Heading 2
-
-Some more text
-
-### Heading 3
-
-Even more text
-
-
-
+In this revision, I think the logic flow is a little clearer, or at least more intuitive. In the original version, I think the process of sorting and working through all possible values while catering for dupicates feels quite cumbersome. I feel my revised version at least spells out the weaknesses of this technique a little better.
