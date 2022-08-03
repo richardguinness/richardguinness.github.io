@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: About
+title: About Me
 permalink: /about/
 ---
 I am studying data science, and have been for about 2 years.
