@@ -15,7 +15,13 @@ url: "https://richardguinness.github.io" # the base hostname & protocol for your
 #twitter_username: jekyllrb
 github_username: richardguinness
 
-google_analytics: G-Q98SENX5YL
+environment: prod
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-Q98SENX5YL"
+    anonymize_ip: false # default
 
 locale: "en-GB"
 #breadcrumbs: true
